@@ -1,0 +1,138 @@
+body{
+	font-family: 'Heebo', sans-serif;
+	margin: 0;
+}
+.header-menu{
+	position: fixed;
+	background: #191919;
+	padding: 20px;
+	width: 100%;
+	height: 30px;
+}
+
+.left-area h3{
+	color: #fff;
+	margin: 0;
+	text-transform: uppercase;
+	font-size: 22px;
+	font-weight: 900;
+}
+
+.left-area span{
+	color:#2195AA;
+}
+
+.logout-btn{
+	padding: 5px;
+	background-color: #2195AA;
+	text-decoration: none;
+	float: right;
+	margin-top: -30px;
+	margin-right: 40px;
+	border-radius: 2px;
+	font-size: 15px;
+	font-weight: 600;
+	color: #fff;
+	transition: 0.5s;
+	transition-property: background;
+}
+
+.logout-btn:hover{
+	background-color: #2DDCFC;
+}
+
+.menute{
+	background-color: #191919;
+	margin-top: 70px;
+	padding-top: 40px;
+	position: fixed;
+	left: 0;
+	width: 250px;
+	height: 100%;
+	transition: 0.4s;
+	transition-property: left;
+	transform: translateY(-3px);
+}
+
+.menute .imagen-perfil{
+	border-radius: 100px;
+	margin-bottom: 10px;
+	width: 120px;
+}
+
+.menute h4{
+	color: #ccc;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.menute a{
+	color: #fff;
+	display: flex;
+	width: 100%;
+	line-height: 60px;
+	text-decoration: none;
+	padding-left: 40px;
+	box-sizing: border-box;
+	transition: 0.2s;
+	transition-property: background;
+}
+
+.menute a:hover{
+	background-color: #2195AA;
+}
+
+.menute i{
+	padding-right: 10px;
+	margin-top: 20px;
+}
+
+label #menute-btn{
+	z-index: 1;
+	color: #fff;
+	position: fixed;
+	cursor: pointer;
+	left: 300px;
+	font-size: 20px;
+	margin: 5px 0;
+	transition: 0.5s;
+	transition-property: background;
+}
+
+label #menute-btn:hover{
+	color: #2195AA;
+}
+
+#check:checked ~ .menute{
+	left: -200px;
+}
+
+#check:checked ~ .menute a span{
+	display: none;
+}
+#check:checked ~ .menute i{
+	padding-bottom: 15px;
+}
+
+#check:checked ~ .menute a{
+	font-size: 25px;
+	margin-left: 170px;
+	width: 80px;
+}
+
+.content{
+	margin-left: 110px;
+	background: url('../access/alpes.jpg') no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	transition: 0.5s;
+	transition-property: margin-left;
+}
+
+#check:checked ~ .content{
+	margin-left: 50px;
+}
+
+#check{display: none;}
+
